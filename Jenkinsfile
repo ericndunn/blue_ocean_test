@@ -19,19 +19,8 @@ pipeline {
     }
 
     stage('STAGE2') {
-      parallel {
-        stage('STAGE2') {
-          steps {
-            echo 'MESSAGE HERE'
-          }
-        }
-
-        stage('error') {
-          steps {
-            dir(path: '/var/lib')
-          }
-        }
-
+      steps {
+        echo 'MESSAGE HERE'
       }
     }
 
