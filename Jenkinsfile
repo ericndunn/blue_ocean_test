@@ -9,7 +9,7 @@ pipeline {
           }
         }
 
-        stage('') {
+        stage('error') {
           steps {
             sh 'echo "World"'
           }
@@ -26,9 +26,9 @@ pipeline {
           }
         }
 
-        stage('') {
+        stage('error') {
           steps {
-            dir(path: '/var/lib/whatever')
+            dir(path: '/var/lib')
           }
         }
 
