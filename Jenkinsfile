@@ -30,6 +30,12 @@ pipeline {
       }
     }
 
+    stage('') {
+      steps {
+        bat(script: 'set', label: 'windows', returnStdout: true, returnStatus: true)
+      }
+    }
+
   }
   environment {
     NAME = 'VALUE'
