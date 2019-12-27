@@ -5,7 +5,7 @@ pipeline {
       parallel {
         stage('STAGE1') {
           steps {
-            sh 'echo "Hello"'
+            cleanWs()
           }
         }
 
